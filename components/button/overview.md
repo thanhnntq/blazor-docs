@@ -22,8 +22,6 @@ The Blazor Button provides a variety of styling options through the [built-in th
 
 1. (Optional) Configure the `OnClick` event handling to show the current date and time.
 
-1. In the code snippet toolbar, select the **PREVIEW** tab to see the result.
-
 >caption Basic Blazor Button with OnClick event handling
 
 ````CSHTML
