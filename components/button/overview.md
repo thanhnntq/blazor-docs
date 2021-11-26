@@ -16,11 +16,11 @@ Buttons communicate specific actions that the user can take. You can set them to
 
 The Blazor Button provides a variety of styling options through the [built-in themes]({%slug general-information/themes%}) and the button [type]({%slug button-type%}). It supports different types of [icons]({%slug button-icons%}) and generates click [events]({%slug button-events%}).
 
-## Creating Basic Blazor Button
+## Creating Blazor Button
 
 1. Use the `<TelerikButton>` tag to add the component to a view, for example, `~/Pages/Index.razor`.
 
-1. (Optional) Configure the `OnClick` event handling to show the current date and time.
+1. Configure the `OnClick` event handling to show the current date and time.
 
 >caption Basic Blazor Button with OnClick event handling
 
@@ -43,7 +43,7 @@ To see the result from the code snippet above, select the **PREVIEW** tab in the
 
 ## Key Features
 
-The Telerik UI for Blazor components provide an always growing collection of built-in features that allow you to reduce the development time and to create stunning applications with class-leading performance. This sections describes some of the most popular features of the Telerik UI Button for Blazor.
+The Blazor Buttron component provides following key features:
 
 * [Icons](#icons)
 
@@ -55,23 +55,23 @@ The Telerik UI for Blazor components provide an always growing collection of bui
 
 * [Disabled State](#disabled-state)
 
-### Icons
+## Icons
 
 To visually communicate the purpose of a button, you can use add an image, a sprite, or font icon. You can choose between the wide range of built-in font icons or even use your custom font icons. [Read more about the Blazor Button icons...]({%slug button-icons%})
 
-### Styling
+## Styling
 
 To customize the style and the appearance of the Blazor Button, you can use the [built-in themes]({%slug general-information/themes%}). Additionally, you can also take advantage of the `Class` attribute and apply custom CSS rules. [Read more about the Blazor Button styling...]({%slug button-styling%})
 
-### Type
+## Type
 
 To control the desired behavior of the Blazor Button, you can use the `type` attribute. This allows you to select on of the following button types: `Submit`, `Reset`, and `Button`. [Read more about the Blazor Button type...]({%slug button-type%})
 
-### Events
+## Events
 
 The Blazor Button generate events that you can handle and further customize the behavior of the Button. [Read more about the Blazor Button events...]({%slug button-events%}).
 
-### Disabled State
+## Disabled State
 
 To stop the users from interacting with a button until certain requirements are met, you can render a disabled button. [Read more about the disabled Blazor Button...]({%slug disabled-button%}).
 
@@ -91,18 +91,6 @@ You can create a reference to an instance of the Blazor Button and use its metho
 }
 ````
 
-## Blazor AutoComplete Learning Resources
-
-To learn more about using the Blazor Button, you can take a look at the demo pages and modify them by using Progress Telerik REPL for Blazor.
-
-### Demos
-
-The Blazor Button provides various <a href="https://demos.telerik.com/blazor-ui/button/overview" target="_blank">demo scenarios</a> that demonstrate the Button features and that you can explore online. You can even edit the demos in [Telerik REPL](#repl-for-blazor) without having to set up Telerik UI locally on your development machine. If you need offline access to the demos, they are located in the `demos` folder of your [local installation]({%slug installation/msi%}).
-
-### REPL for Blazor
-
-[Progress Telerik REPL for Blazor](https://www.telerik.com/blazor-ui/repl/getting-started) is an online playground that you can use to experiment with Blazor and the Telerik UI components directly in your browser. You can edit existing demos to demonstrate your ideas, play with the Telerik components, save your work and share it with friends and colleagues.
-
 ## Next Steps
 
 * [Styling the Blazor Button]({%slug button-styling%})
@@ -113,7 +101,5 @@ The Blazor Button provides various <a href="https://demos.telerik.com/blazor-ui/
 
   * [Live Demo: Button](https://demos.telerik.com/blazor-ui/button/index)
   * [Events]({%slug button-events%})
-  * [Icons]({%slug button-icons%})
   * [Type]({%slug button-type%})
-  * [API Reference](https://docs.telerik.com/blazor-ui/api/Telerik.Blazor.Components.TelerikButton)
-   
+  * [API Reference](https://docs.telerik.com/blazor-ui/api/Telerik.Blazor.Components.TelerikButton)   

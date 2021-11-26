@@ -16,23 +16,14 @@ The Telerik Blazor Data Grid provides a comprehensive set of ready-to-use featur
 
 The Telerik Blazor Grid is built on native Blazor from the ground up, by a company with a long history of making enterprise-ready Grids. This results in a Data Grid that delivers lightning fast performance and is highly customizable.
 
-## Creating Basic Data Grid
+## Creating Data Grid
 
 1. Use the `TelerikGrid` tag to add the component to a view, for example, `~/Pages/Index.razor`.
 
 1. Set the Grid's `Data` attribute to the variable that holds your data collection.
 
-1. Optionally, enable some of the Data Grid features.
+1. Enable some of the Data Grid features, like paging, sorting, and grouping.
    
-   | Feature | Declaration |
-   |---------|-------------|
-   | [Paging]({%slug components/grid/features/paging%}) | `Pageable="true"` |
-   | [Sorting]({%slug components/grid/features/sorting%}) | `Sortable="true"` |
-   | [Grouping]({%slug components/grid/features/grouping%}) | `Groupable="true"` |
-   | [Resizing]({%slug components/grid/columns/resize%}) | `Resizable="true"` |
-   | [Reorder columns]({%slug components/grid/columns/reorder%}) | `Reorderable="true"` |
-   | [Filtering]({%slug components/grid/filtering%}) | `FilterMode="Telerik.Blazor.GridFilterMode.FilterRow"` |
-
 1. Under the `GridColumns` tag, set the desired [`GridColumn`]({%slug components/grid/columns/bound%}) instances. Their `Field` property points to the name of the model field that you want to display in the column.
 
 >caption Get started with the Blazor Data Grid by providing it with a data collection and enabling its key features
@@ -42,8 +33,6 @@ General Grid with its most common features
 
 <TelerikGrid Data="@MyData" Height="400px"
              Pageable="true" Sortable="true" Groupable="true"
-             FilterMode="Telerik.Blazor.GridFilterMode.FilterRow"
-             Resizable="true" Reorderable="true">
     <GridColumns>
         <GridColumn Field="@(nameof(SampleData.Id))" Width="120px" />
         <GridColumn Field="@(nameof(SampleData.Name))" Title="Employee Name" Groupable="false" />
@@ -93,7 +82,7 @@ If you prefer video instructions, watch the Blazor Data Grid video tutorial. It 
 
 ## Key Features
 
-The Telerik UI for Blazor components provide an always growing collection of built-in features that allow you to reduce the development time and to create stunning applications with class-leading performance. This sections describes some of the most popular features of the Telerik UI Data Grid for Blazor.
+The Data Grid for Blazor provides the following key features:
 
 |   |   |
 |---|---|
@@ -109,28 +98,31 @@ The Telerik UI for Blazor components provide an always growing collection of bui
 | [Events](#events) | [Multi-Column Headers](#multi-column-headers) |
 | [Styling](#styling) |
 
-### Data Binding
+## Data Binding
 
 To show data in a Grid, define [GridColumn]({%slug components/grid/columns/bound%}) instances or allow the Grid to [generate columns automatically]({%slug grid-columns-automatically-generated%}). Declared columns take a model `Field` and expose settings for [templates]({%slug components/grid/features/templates%}), [grouping](#grouping) and [reordering]({%slug components/grid/columns/reorder%}). To [edit](#editing) data or invoke custom logic, define a [CommandColumn]({%slug components/grid/columns/command%}).
 
 The [Grid Data Binding article]({%slug grid-data-binding%}) provides detailed information and examples about binding the Grid in different scenarios and to various data sources.
 
-### Loading Animation
+## Loading Animation
 
 The Blazor Data Grid provides a [loading animation]({%slug components/grid/loading-animation%}) that improves the user experience by indicating an ongoing data operation, for example, paging, grouping and others.
 
-### Editing
+## Editing
 
 The Blazor Data Grid can perform CRUD operations on its current data collection and exposes events that let you control the operations and transfer changes to the actual data source. Depending on your requirements, you can choose between the [`Incell`]({%slug components/grid/editing/incell%}), [`Inline`]({%slug components/grid/editing/inline%}), and [`Popup`]({%slug components/grid/editing/popup%}) edit modes. [Read more about the Blazor Data Grid CRUD operations]({%slug components/grid/editing/overview%}).
 
-### Paging
+## Paging
 
 The Blazor Data Grid supports paging of the data out-of-the box. This allows you to split the content into pages for better user experience. [Read more about the Blazor Data Grid paging]({%slug components/grid/features/paging%}). An alternative to standard paging is to configure [virtual scrolling]({%slug components/grid/virtual-scrolling%}) and eliminate the pager when displaying large volumes of data. 
 
-### Sorting, Filtering, and Grouping
+## Sorting, Filtering, and Grouping
 
 To help the user in finding the needed information, the Data Grid can automatically perform data operations like sorting, filtering, and Grouping. Read more about: [Blazor Data Grid sorting]({%slug components/grid/features/sorting%}), [Blazor Data Grid filtering]({%slug components/grid/filtering%}), and [Blazor Data Grid grouping]({%slug components/grid/features/grouping%}).
 
+## Column Features
+
+The columns of the Grid are one of its main building blocks and offer a wide range of built-in functionalities.
 ### Autogenerated Columns
 
 You can autogenerate Data Grid columns for each public property in its model. [Read more about the Blazor Data Grid autogenerated columns feature]({%slug grid-columns-automatically-generated%}).
@@ -163,19 +155,19 @@ To programmatically hide some of the Data Grid columns when certain conditions o
 
 The multi-column headers allow you to group several related columns under a common column header. [Read more about the multi-column headers]({%slug grid-columns-multiple-column-headers%}).
 
-### Events
+## Events
 
 The Blazor Data Grid columns generate a variety of events that you can handle and further customize the behavior of the Data Grid. [Read more about the column events]({%slug grid-column-events%}).
 
-### Selection
+## Selection
 
 The Data Grid offers single or multiple selection modes. [Read more about the Blazor Data Grid selection]({%slug components/grid/selection/overview%}).
 
-### Toolbar
+## Toolbar
 
 You can define user actions in a dedicated toolbar. For the moment, they are mostly custom actions, but in future versions you will be able to add features like exporting there. [Read more about the Blazor Data Grid toolbar]({%slug components/grid/features/toolbar%}).
 
-### Scrolling
+## Scrolling
 
 You can choose between the two scroll modes that the Blazor Data Grid offers:
 
@@ -185,11 +177,11 @@ You can choose between the two scroll modes that the Blazor Data Grid offers:
 
 The Grid offers also a Virtual horizontal scrolling. You can read more about this feature in the [Column Virtualization]({%slug grid-columns-virtual%}) article.
 
-### State
+## State
 
 The Data Grid provides its current state (such as filtering, sorting, grouping, selection and so on) through methods and events so you can store the Grid layout for your end users - this lets them continue where they left off. [Read more about the Blazor Data Grid state]({%slug grid-state%}).
 
-### Styling
+## Styling
 
 The Blazor Data Grid allows you to style it by using the built-in [Data Grid Templates functionality]({%slug components/grid/features/templates%}) and customize almost every aspect of the table, for example, the columns, rows, column headers and footers, and many more. You can also use the `Class` property to configure complex CSS rules, [apply conditional formatting]({%slug components/grid/styling%}#conditional-formatting), and [take advantage of the elastic design]({%slug components/grid/styling%}#elastic-design).
 
@@ -228,21 +220,6 @@ The Data Grid is a generic component, and to store a reference, you must use the
 	}
 }
 ````
-## Blazor Data Grid Learning Resources
-
-To learn more about using the Blazor Data Grid, you can take a look at the demo pages and the samples repo. You can even modify the available demos by using Progress Telerik REPL for Blazor.
-
-### Demos
-
-The Blazor Grid provides various <a href="https://demos.telerik.com/blazor-ui/grid/overview" target="_blank">demo scenarios</a> that demonstrate the Blazor Grid features and that you can explore online. You can even edit the demos in [Telerik REPL](#repl-for-blazor) without having to set up Telerik UI locally on your development machine. If you need offline access to the demos, they are located in the `demos` folder of your [local installation]({%slug installation/msi%}).
-
-### REPL for Blazor
-
-[Progress Telerik REPL for Blazor](https://www.telerik.com/blazor-ui/repl/getting-started) is an online playground that you can use to experiment with Blazor and the Telerik UI components directly in your browser. You can edit existing demos to demonstrate your ideas, play with the Telerik components, save your work and share it with friends and colleagues.
-
-### Samples Repo
-
-You get access to various Blazor Data Grid sample projects that show popular scenarios and that you can use to jump-start your project by copying from them. These projects are not part of the demos and the documentation, so you when you need to check them, navigate to the Grid folder in the dedicated <a href="https://github.com/telerik/blazor-ui" target="_blank">Telerik UI for Blazor Sample Projects repo</a>.
 
 ## Next Steps
 
