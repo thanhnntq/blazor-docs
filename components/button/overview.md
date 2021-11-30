@@ -41,27 +41,9 @@ The Blazor Button provides a variety of styling options through the [built-in th
 
 To see the result from the code snippet above, select the **PREVIEW** tab in the code snippet toolbar.
 
-## Key Features
-
-The Blazor Buttron component provides following key features:
-
-* [Icons](#icons)
-
-* [Styling](#styling)
-
-* [Type](#type)
-
-* [Events](#events)
-
-* [Disabled State](#disabled-state)
-
 ## Icons
 
 To visually communicate the purpose of a button, you can use add an image, a sprite, or font icon. You can choose between the wide range of built-in font icons or even use your custom font icons. [Read more about the Blazor Button icons...]({%slug button-icons%})
-
-## Styling
-
-To customize the style and the appearance of the Blazor Button, you can use the [built-in themes]({%slug general-information/themes%}). Additionally, you can also take advantage of the `Class` attribute and apply custom CSS rules. [Read more about the Blazor Button styling...]({%slug button-styling%})
 
 ## Type
 
@@ -74,6 +56,10 @@ The Blazor Button generate events that you can handle and further customize the 
 ## Disabled State
 
 To stop the users from interacting with a button until certain requirements are met, you can render a disabled button. [Read more about the disabled Blazor Button...]({%slug disabled-button%}).
+
+## Styling
+
+To customize the style and the appearance of the Blazor Button, you can use the [built-in themes]({%slug general-information/themes%}). Additionally, you can also take advantage of the `Class` attribute and apply custom CSS rules. [Read more about the Blazor Button styling...]({%slug button-styling%})
 
 ## Using Blazor Button Reference
 

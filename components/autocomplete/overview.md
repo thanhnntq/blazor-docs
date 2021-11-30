@@ -46,75 +46,53 @@ In the code snippet toolbar, select the **PREVIEW** tab to see the result.
 
 >tip If you need a value identifier for the items in the dropdown instead of their text, consider the [ComboBox component](../combobox/overview). The AutoComplete is a free text input that accepts any text the user writes, not just the suggestions from the dropdown. Thus, the `Value` of the AutoComplete is always a `string`, while the ComboBox can provide you with a `number` or a `Guid`, not only a `string`.
 
-## Key Features
-
-The AutoComplete for Blazor provides the following key features:
-
-* [Data Binding](#data-binding)
-
-* [Filter](#filter)
-
-* [Grouping](#autocomplete-grouping)
-
-* [Templates](#templates)
-
-* [Validation](#validation) 
-
 ## Data Binding
 
-The Blazor AutoComplete requires a data source so that it can display suggestions to the user. To provide a data source, use the `Data` property. [Read more about the Blazor AutoComplete data binding]({%slug autocomplete-databind%}).
+The Blazor AutoComplete requires a data source so that it can display suggestions to the user. To provide a data source, use the `Data` property. [Read more about the Blazor AutoComplete data binding...]({%slug autocomplete-databind%})
 
 ## Filter
 
-The Blazor AutoComplete has a built-in filter that narrows down the shown suggestions as the end-user types. To configure this feature, use the `Filterable` parameter. Additionally, you can choose between different filter operators and configure after how many symbols the list with suggestions will appear. [Read more about the Blazor AutoComplete filter]({%slug autocomplete-filter%}).
+The Blazor AutoComplete has a built-in filter that narrows down the shown suggestions as the end-user types. To configure this feature, use the `Filterable` parameter. Additionally, you can choose between different filter operators and configure after how many symbols the list with suggestions will appear. [Read more about the Blazor AutoComplete filter...]({%slug autocomplete-filter%})
 
 ## Grouping
 
-The Blazor AutoComplete enables you to group the listed suggestions into categories so you can help the end-user to browse faster through longer lists. [Read more about the Blazor AutoComplete filter]({%slug components/autocomplete/grouping%}).
+The Blazor AutoComplete enables you to group the listed suggestions into categories so you can help the end-user to browse faster through longer lists. [Read more about the Blazor AutoComplete grouping...]({%slug components/autocomplete/grouping%})
 
 ## Templates
 
-You can use the built-in [AutoComplete templates functionality]({%slug autocomplete-templates%}) and customize what is rendered in the items, header, and footer. 
+You can use the built-in templates functionality and customize what is rendered in the items, header, and footer. [Read more about the Blazor AutoComplete templates...]({%slug autocomplete-templates%})
 
 ## Validation
 
-You can ensure that the end-user enters an acceptable input by using the Blazor AutoComplete validation. [Read more about input validation]({%slug common-features/input-validation%}).
+You can ensure that the end-user enters an acceptable input by using the Blazor AutoComplete validation. [Read more about input validation...]({%slug common-features/input-validation%}).
 
-## Key Properties
+## Attributes
 
-The Blazor AutoComplete provides various properties that allow you to configure the component:
+The Blazor AutoComplete provides various attributes that allow you to configure the component:
 
-* `Id`&mdash;Renders as the `id` attribute on the `<input />` element, so you can attach a `<label for="">` to the input.
-
-* `TItem`&mdash;The type of the model to which the component is bound. Required if you can't provide `Data` or `Value`. Determines the type of the reference object.
-
-* `Value` and `bind-Value`&mdash;Get/set the value of the component, can be used for binding. Use the `@bind-Value` syntax for two-way binding, for example, to a variable of your own. The `Value` must be a `string`.
-
-* `ValueField`&mdash;The name of the field from the model that will be shown as hints to the user. Defaults to `Value`. Not required when binding to a simple list of strings.
-
-* `TabIndex`&mdash;Maps to the `tabindex` attribute of the HTML element. You can use it to customize the order in which the inputs in your form focus with the `Tab` key.
-
-* `ClearButton` - whether the user will have the option to clear the selected value with a button on the input. When it is clicked, the `Value` will be updated to `string.Empty`.
-
-* `Enabled`&mdash;Use this Boolean property to render a disabled Blazor AutoComplete component until certain requirements are met.
-
-* `MinLength` - how many characters the text has to be before the suggestions list appears. Cannot be `0`. Often works together with [filtering]({%slug autocomplete-filter%}).
-
-* `Placeholder` - the text the user sees as a hint when there is no text in the input. In order for it to be shown, the `Value` parameter should be set to the default value for string (`null`).
+| Attribute      | Description |
+| ----------- | ----------- |
+| `Id` | Renders as the `id` attribute on the `<input />` element, so you can attach a `<label for="">` to the input.|
+| `TItem` | The type of the model to which the component is bound. Required if you can't provide `Data` or `Value`. Determines the type of the reference object.|
+| `Value` and `bind-Value` | Get/set the value of the component, can be used for binding. Use the `@bind-Value` syntax for two-way binding, for example, to a variable of your own. The `Value` must be a `string`.|
+| `ValueField`| The name of the field from the model that will be shown as hints to the user. Defaults to `Value`. Not required when binding to a simple list of strings.|
+| `TabIndex` | Maps to the `tabindex` attribute of the HTML element. You can use it to customize the order in which the inputs in your form focus with the `Tab` key.|
+| `ClearButton` | Whether the user will have the option to clear the selected value with a button on the input. When it is clicked, the `Value` will be updated to `string.Empty`.|
+| `Enabled` | Use this Boolean property to render a disabled Blazor AutoComplete component until certain requirements are met.|
+| `MinLength` | How many characters the text has to be before the suggestions list appears. Cannot be `0`. Often works together with [filtering]({%slug autocomplete-filter%}).|
+| `Placeholder` | The text the user sees as a hint when there is no text in the input. In order for it to be shown, the `Value` parameter should be set to the default value for string (`null`).|
 
 ### Styling and Appearance
 
-The following properties enable you to customize the appearance of the Blazor AutoComplete:
+The following attributes enable you to customize the appearance of the Blazor AutoComplete:
 
-* `Class`&mdash;Use it to configure complex CSS rules for the main wrapping element of the AutoComplete. 
-
-* `PopupClass`&mdash;Allows you to apply CSS rules for the AutoComplete's dropdown.
-
-* `Width`&mdash;Use it to set the width of the main element. @[template](/_contentTemplates/inputs/inputs-width-template.md#inputs-width-information)
-
-* `PopupHeight`&mdash;Sets the height of the expanded dropdown list element.
-
-* `PopupWidth`&mdash;Sets the width of the expanded dropdown list element. If you don't specify a value, the dropdown width will match the main element which can help with responsive layouts and 100% widths.
+| Attribute      | Description |
+| ----------- | ----------- |
+| `Class` | Use it to configure complex CSS rules for the main wrapping element of the AutoComplete. |
+| `PopupClass` | Allows you to apply CSS rules for the AutoComplete's dropdown. |
+| `Width` | Use it to set the width of the main element. @[template](/_contentTemplates/inputs/inputs-width-template.md#inputs-width-information)|
+| `PopupHeight` | Sets the height of the expanded dropdown list element.|
+| `PopupWidth` | Sets the width of the expanded dropdown list element. If you don't specify a value, the dropdown width will match the main element which can help with responsive layouts and 100% widths.|
 
 @[template](/_contentTemplates/common/get-model-from-dropdowns.md#get-model-from-dropdowns)
 
