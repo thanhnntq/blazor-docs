@@ -1,7 +1,7 @@
 ---
 title: Overview
 page_title: AutoComplete Overview
-description: Overview of the AutoComplete for Blazor.
+description: Discover the Blazor AutoComplete and explore the examples.
 slug: autocomplete-overview
 tags: telerik,blazor,autocomplete,combo,overview
 published: True
@@ -66,9 +66,9 @@ You can use the built-in templates functionality and customize what is rendered 
 
 You can ensure that the end-user enters an acceptable input by using the Blazor AutoComplete validation. [Read more about input validation...]({%slug common-features/input-validation%}).
 
-## Attributes
+## Parameters
 
-The Blazor AutoComplete provides various attributes that allow you to configure the component:
+The Blazor AutoComplete provides various parameters that allow you to configure the component:
 
 | Attribute      | Description |
 | ----------- | ----------- |
@@ -84,7 +84,7 @@ The Blazor AutoComplete provides various attributes that allow you to configure 
 
 ### Styling and Appearance
 
-The following attributes enable you to customize the appearance of the Blazor AutoComplete:
+The following parameters enable you to customize the appearance of the Blazor AutoComplete:
 
 | Attribute      | Description |
 | ----------- | ----------- |

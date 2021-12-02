@@ -1,14 +1,14 @@
 ---
 title: Overview
 page_title: Grid Overview
-description: Overview of the Grid for Blazor.
+description: Discover the Blazor Data Grid and explore the examples.
 slug: components/grid/overview
 tags: telerik,blazor,grid,datagrid,overview
 published: True
 position: 0
 ---
 
-# Blazor Grid Component Overview
+# Blazor Data Grid Overview
 
 This article provides a quick introduction so you can get your first <a href="https://www.telerik.com/blazor-ui/grid" target="_blank">Blazor Data Grid component</a> up and running in a few seconds, a video tutorial, and a list of the key features it provides.
 
