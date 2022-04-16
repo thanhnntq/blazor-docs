@@ -611,6 +611,11 @@ main_theme: blazor
 defaults:
 -
     scope:
+        path: "web.config"
+    values:
+        layout: null
+-
+    scope:
         path: ""
     values:
         layout: "documentation"
