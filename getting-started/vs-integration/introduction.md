@@ -3,7 +3,7 @@ title: Overview
 page_title: Visual Studio Integration Overview
 description: Learn how to enhance your experience in developing web applications with Progress Telerik UI for Blazor.
 slug: getting-started-vs-integration-overview
-position: 1
+position: 10
 ---
 
 # Visual Studio Integration Overview
